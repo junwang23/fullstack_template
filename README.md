@@ -1,4 +1,4 @@
-# Template for Full-Stack Projects
+# Template for Full-Stack Data Science Projects
 
 ### with React + Material UI + D3 + Webpack + Flask
 
