@@ -4,6 +4,7 @@ import { scaleLinear, scaleBand } from "d3-scale"
 import { axisLeft, axisBottom } from "d3-axis"
 import { range, max } from "d3-array"
 import 'd3-transition';
+import "../css/barchart.css"
 
 
 export default class BarChart extends Component {

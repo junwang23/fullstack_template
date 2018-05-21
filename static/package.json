@@ -21,7 +21,7 @@
     ],
     "author": "Jun Wang",
     "license": "MIT",
-    "description": "",
+    "description": "A template for full-stack data science projects with React.js, d3.js, Material UI, and Python Flask, using Webpack for bundling and watching.",
     "devDependencies": {
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
