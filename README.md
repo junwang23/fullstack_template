@@ -14,10 +14,10 @@ The ```barchart.jsx``` implements a barchart react component using d3 for visual
 
 The function ```update(nextProps)``` uses the *enter-update-exit* pattern of d3 selection to update the visualization. This function is invoked in both ```componentDidMount``` and ```componentWillReceiveProps``` to draw the bars when the data is firstly given and updated. The data array is passed as a property from the upper-level component.
 
-A abstract view of the react + d3 component is as follows.
+An abstract view of the react + d3 patten is as follows.
 
 ```javascript
-export default class BarChart extends Component {
+export default class Chart extends Component {
     constructor(props) {
         super(props);
         this.update = this.update.bind(this);
@@ -45,6 +45,8 @@ export default class BarChart extends Component {
 }
 ```
 
-### Warning
+### Note
 
 The function ```componentWillReceiveProps``` is marked as *UNSAFE* in current react [document](https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops) and may be deprecated in the future version.
+
+The d3 selection pattern is especially convinient for creating iteractive visualization with animation. An alternative and essentially similar approach is to use the [react-move](https://react-move.js.org/#/) pacakge that is more compatitable with React.
