@@ -23,16 +23,19 @@ export default class Demo extends Component {
     }
 
     render() {
+        const idx = this.state.idx;
+        const data = this.state.data[idx];
+
         return (
             <Grid container className="demo">
                 <Grid item lg={12} sm={12}>
                     <h1>Hello There!</h1>
                 </Grid>
                 <Grid item lg={12} sm={12}>
-                    <Button color="primary" variant="raised" onClick={() => this.handleClick(this.state.idx)}>Toggle</Button>
+                    <Button color="primary" variant="raised" onClick={() => this.handleClick(idx)}>Toggle</Button>
                 </Grid>
                 <Grid item lg={12} sm={12}>
-                    <BarChart width={500} height={300} margin={20} data={this.state.data[this.state.idx]} />
+                    <BarChart width={500} height={300} margin={20} data={data} />
                 </Grid>
             </Grid>
         );
